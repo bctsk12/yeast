@@ -1,0 +1,12 @@
+<h1 class="page-header"><%= @logged_exceptions.first.name %></h1>
+<p>This exception has been logged <strong><%= pluralize @logged_exceptions.length, "time" %></strong>.</p>
+
+<% @logged_exceptions.each do |exception| %>
+  <div>
+    <h2>
+      <div class="pull-right"><small><%= exception.created_at.strftime("%b %d, %Y") %></small></div>
+      <%= exception.message %>
+    </h2>
+  </div>
+<% end %>
+

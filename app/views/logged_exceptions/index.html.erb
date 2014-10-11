@@ -1,0 +1,14 @@
+<h1 class="page-header">Top Exceptions</h1>
+
+<% @grouped_exceptions.each_with_index do |(exception, count), i| %>
+  <% name, message = exception %>
+
+  <div>
+    <h2>
+      <%= content_tag :div, count, class: 'pull-right', data: {toggle: 'tooltip'}, title: "Last" %>
+      <small><%= i + 1 %>.</small>
+      <%= link_to name, logged_exception_path(name) %>
+      <small><%= message %></small>
+    </h2>
+  </div>
+<% end %>
