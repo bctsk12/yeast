@@ -1,4 +1,4 @@
-<h1 class="page-header"><%= @logged_exceptions.first.name %></h1>
+<h1 class="page-header"><%= params[:id] %><%#= @logged_exceptions.first.name %></h1>
 <p>This exception has been logged <strong><%= pluralize @logged_exceptions.length, "time" %></strong>.</p>
 
 <% @logged_exceptions.each do |exception| %>
