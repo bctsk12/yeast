@@ -1,4 +1,6 @@
 <h3><%= @logged_exception.name %></h3>
 <p><%= @logged_exception.message %></p>
 
-<%= simple_format @page.body %>
+<% if @page.present? %>
+  <%= simple_format @page.body %>
+<% end %>
