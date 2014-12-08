@@ -1,0 +1,102 @@
+.panel-gray {
+  background: #f4f5f7;
+}
+
+.landing-layout {
+  .panel {
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+  }
+
+  .panel-description {
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    height: 300px;
+    background-color: white;
+  }
+
+  .panel-body {
+      // @include breakpoint(mobile){
+      //   padding-left: 0;
+      //   padding-right: 0;
+      // }
+  }
+
+  .panel-body-description {
+    padding: 2em 1em;
+  }
+
+  .panel-body-story{
+    min-height: 150px;
+      @include breakpoint(mobile){
+        min-height: 20px;
+      }
+      @include breakpoint(tablet){
+        min-height: 50px;
+      }
+  }
+
+   .panel-body-story-html{
+    min-height: 200px;
+      @include breakpoint(mobile){
+        min-height: 20px;
+      }
+      @include breakpoint(tablet){
+        min-height: 50px;
+      }
+  }
+
+  .panel-footer {
+    background-color: white;
+    height: 75px;
+    padding-top: 25px;
+      @include breakpoint(mobile){
+        padding-top: 18.5px;
+      }
+
+    img {
+      @include breakpoint(tablet){
+        position: absolute;
+        right: 1em;
+        bottom: .5em;
+        width: 50px;
+        border-radius: 25px;
+      }
+    }
+  }
+
+  .testimonials {
+    .panel {
+      border: 1px solid $charcoal;
+        @include breakpoint(mobile){
+          margin-top: 1em;
+        }
+      &.main{
+        border: 0;
+        padding-bottom: 3em;
+      }
+    }
+
+  .panel-body {
+      @include breakpoint(mobile){
+        padding: 1em;
+      }
+      &.main{
+        background-color: white;
+      }
+    }
+
+    .panel-footer {
+      background-color: $charcoal;
+      border-radius: 0;
+      border: 0;
+      padding-right: 80px;
+      &.html {
+        color: white;
+      }
+    }
+
+  }
+}

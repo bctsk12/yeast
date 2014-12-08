@@ -1,12 +1,6 @@
-<h1 class="page-header"><%= params[:id] %><%#= @logged_exceptions.first.name %></h1>
-<p>This exception has been logged <strong><%= pluralize @logged_exceptions.length, "time" %></strong>.</p>
+<h3><%= @logged_exceptions.first.name %></h3>
+<p>This exception has been logged <strong><%= pluralize @logged_exceptions.length, "time" %></strong> with <strong><%= pluralize @grouped_exceptions.count, "different message" %></strong>.</p>
 
-<% @logged_exceptions.each do |exception| %>
-  <div>
-    <h2>
-      <div class="pull-right"><small><%= exception.created_at.strftime("%b %d, %Y") %></small></div>
-      <%= exception.message %>
-    </h2>
-  </div>
+<% @grouped_exceptions.sort_by{ |message, count| count }.reverse.each do |message, count| %>
+  <p><%= link_to message, logged_exception_message_path(@logged_exceptions.first.name, message) %> - <%= pluralize count, "time" %></p>
 <% end %>
-

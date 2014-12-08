@@ -1,0 +1,95 @@
+.footer {
+  border-top: #f4f5f7;
+  color: #a6a6a6;
+  font-size: 14px;
+  padding: 40px 0;
+  margin-top: 50px;
+  &.simple {
+    margin-top: 0px;
+  }
+  a {
+    color: inherit;
+    &:hover {
+      color: $brand-primary;
+      text-decoration: none;
+      @include transition(0.25s);
+    }
+  }
+  .title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  sup {
+    color: $brand-primary;
+  }
+
+  .sitemap {
+    @include make-row();
+    .sitemap-category {
+      @include make-sm-column(3);
+      padding-bottom: 20px;
+    }
+    .pages {
+      @extend .sitemap-category;
+    }
+    .blog {
+      @extend .sitemap-category;
+    }
+    .courses {
+      @extend .sitemap-category;
+    }
+    .social {
+      @extend .sitemap-category;
+    }
+  }
+
+}
+
+.footer-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  float: none;
+  line-height: 22px;
+  margin-right: 0;
+}
+
+.site-badges {
+  float: right;
+  display: inline-block;
+}
+
+/*one month footer */
+
+.landing-layout {
+    .panel-footer {
+      background-color: white;
+      padding: .75em 2em;
+    }
+
+    .testimonials {
+      .panel-footer {
+          background-color: $charcoal;
+          border-radius: 0;
+          border: 0;
+          &.html {
+            color: white;
+          }
+        }
+
+    @media all and (max-width: $screen-xs-max) {
+      .testimonials {
+         .panel-footer {
+            padding: 1em;
+          }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: .75em;
+}
+
+.course-index-top-header {
+  margin-top: 20px;
+}
+
+.course-partial .btn-info {
+  margin-left: 10px;
+}
+
+.panel-footer-button {
+  margin-top: 15px;
+  @extend .btn;
+  @extend .btn-lg;
+  @extend .btn-info;
+  @extend .btn-block;
+}
+
+div[role=tabpanel] {
+  .form-group {
+    margin-bottom: 0px;
+  }
+}
+

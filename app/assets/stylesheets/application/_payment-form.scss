@@ -1,0 +1,38 @@
+.cc-icons {
+  margin-bottom: 15px;
+
+  label {
+    cursor: pointer;
+  }
+
+  li {
+    list-style: none
+  }
+
+  ul, li {
+    padding-left: 0px;
+    display: inline;
+  }
+
+  input[type="radio"] {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+}
+
+.paypal_notice {
+  margin-bottom: 10px;
+  margin-left: 1px;
+}
+
+.credit-card-valiation {
+  margin-bottom: 18px;
+}
+
+.lead {
+  i, .lead-text {
+    font-size: 18px;
+    margin-right: 3px;
+  }
+}

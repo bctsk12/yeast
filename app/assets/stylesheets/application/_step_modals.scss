@@ -1,0 +1,34 @@
+#step_modal {
+  .modal-header {
+    background-color: $charcoal;
+    color: white;
+    text-align: center;
+  }
+  .modal-body {
+    text-align: center;
+    p {
+      max-width: 360px;
+      margin: auto;
+    }
+  }
+
+  .modal-dialog.modal-md {
+    width: 520px;
+  }
+  .modal-footer {
+    text-align: center;
+  }
+  .btn.btn-outline {
+    color: $gray-light;
+  }
+  .btn.btn-outline:hover {
+    color: white;
+  }
+  .button_to {
+    display: inline;
+  }
+
+  .button_to div {
+    display: inline;
+  }
+}

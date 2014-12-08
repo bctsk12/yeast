@@ -1,0 +1,75 @@
+// Form control focus state
+//
+// Generate a customized focus state and for any input with the specified color,
+// which defaults to the `@input-focus-border` variable.
+//
+// We highly encourage you to not customize the default value, but instead use
+// this to tweak colors on an as-needed basis. This aesthetic change is based on
+// WebKit's default styles, but applicable to a wider range of browsers. Its
+// usability and accessibility should be taken into account with any change.
+//
+// Example usage: change the default blue border and shadow to white for better
+// contrast against a dark gray background.
+
+@mixin form-control-focus($color: $gray-light) {
+  .form-group.focus &,
+  &:focus {
+    border-color: $color;
+    outline: 0;
+    @include box-shadow(none);
+  }
+}
+
+@mixin smooth-operator($time){
+  -webkit-transition: background-color $time;
+  -moz-transition: background-color $time;
+  -o-transition: background-color $time;
+  transition: background-color $time;
+
+}
+
+// Media Queries
+
+// to use breakpoints:
+// .class-name {
+//    width: 100%;
+//    @include breakpoint(mobile) {
+//      width: 60%;
+//    }
+//  }
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == mobile {
+    $breakpoint: $screen-xs;
+  }
+  @else if $breakpoint == tablet {
+    $breakpoint: $screen-sm;
+  }
+  @else if $breakpoint == desktop {
+    $breakpoint: $screen-md;
+  }
+  @else if $breakpoint == large {
+    $breakpoint: $screen-lg;
+  };
+  @media all and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+//MEDIA QUERIES
+
+@mixin responsive-image($view) {
+  -webkit-background-size: $view;
+  -moz-background-size: $view;
+  -o-background-size: $view;
+  background-size: $view;
+}
+
+//Font Awesome
+
+@mixin font-awesome($icon) {
+  @extend .fa;
+  @extend .fa-#{$icon};
+  &::before {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,22 @@
+.enrollment-bar-section {
+  background-color: $light-gray-bg;
+  padding: .6em 0 1.5em;
+}
+.enrollment-bar-alpha {
+  @include make-sm-column(6);
+  @include make-sm-column-offset(1);
+}
+
+	.enrollment-bar-alpha > h3 {
+		font-family: $landing-header-font-family;
+    font-size: $font-size-huge;
+    text-align: center;
+    @include breakpoint(tablet){
+      text-align: left;
+    }
+	}
+
+.enrollment-bar-omega {
+  @include make-sm-column(4);
+}
+

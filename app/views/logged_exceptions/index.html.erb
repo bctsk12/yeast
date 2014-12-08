@@ -1,14 +1,21 @@
-<h1 class="page-header">Top Exceptions</h1>
+<h3>Top Ruby on Rails Exceptions</h3>
 
-<% @grouped_exceptions.each_with_index do |(exception, count), i| %>
-  <% name, message = exception %>
-
-  <div>
-    <h2>
-      <%= content_tag :div, count, class: 'pull-right', data: {toggle: 'tooltip'}, title: "Last" %>
-      <small><%= i + 1 %>.</small>
-      <%= link_to name, logged_exception_path(name) %>
-      <small><%= message %></small>
-    </h2>
-  </div>
-<% end %>
+<div class="panel panel-default">
+    <table class="table table-striped">
+      <thead>
+        <th>Rank</th>
+        <th>Exception</th>
+        <th>Times Seen</th>
+      </thead>
+      <tbody>
+        <% @grouped_exceptions.each_with_index do |(exception, count), i| %>
+          <tr>
+            <td><%= i + 1 %></td>
+            <td><%= link_to exception, logged_exception_path(exception) %></td>
+            <td><%= content_tag :div, pluralize(count, "time"), data: {toggle: 'tooltip'}, title: "Last" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </h4>
+  </table>
+</div>

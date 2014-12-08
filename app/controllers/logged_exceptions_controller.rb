@@ -2,11 +2,12 @@ class LoggedExceptionsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index
-    @grouped_exceptions = LoggedException.group(:name, :message).order("count_all desc").count
+    @grouped_exceptions = LoggedException.group(:name).order("count_all desc").count
   end
 
   def show
     @logged_exceptions = LoggedException.where(name: params[:id]).order(created_at: :desc)
+    @grouped_exceptions = LoggedException.where(name: params[:id]).group(:message).count.to_a
   end
 
   def create

@@ -1,0 +1,31 @@
+.teacher{
+  background-color: $light-gray-bg;
+  padding: 1em 0;
+  display: none;
+  @include breakpoint(tablet){
+    display: block;
+  }
+}
+
+.teacher-alpha {
+  @include make-sm-column(1);
+  @include make-sm-column-offset(1);
+}
+
+  .teacher-alpha img {
+    height: 160px;
+    width: 160px;
+    border-radius: 70px;
+    margin-top: -3.25em;
+    margin-left: -1em;
+  }
+
+.teacher-omega {
+  @include make-sm-column(8);
+  @include make-sm-column-offset(1);
+}
+
+  .teacher-omega p:last-child {
+    color: $gray;
+    font-size: $font-size-small;
+  }

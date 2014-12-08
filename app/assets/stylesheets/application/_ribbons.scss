@@ -1,0 +1,152 @@
+.ribbon {
+ // font-size: 16px !important;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+ width: 90%;
+
+ position: relative;
+ background: #7ECAAD;
+ color: #fff;
+ text-align: center;
+ padding: 1em 1em; /* Adjust to suit */
+ margin: 2em auto 2em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #65A58B;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #538C73 transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+// Corner ribbon
+
+.ribbon-corner-holder {
+  position: absolute;
+  overflow: hidden;
+  height: 10em;
+  top: 0;
+}
+
+.right.ribbon-corner-holder {
+  right: 0;
+}
+
+.left.ribbon-corner-holder {
+  left: 0;
+}
+
+.ribbon-corner, .ribbon-corner:hover {
+  text-decoration: none !important;
+}
+
+.ribbon-corner {
+  font-family: 'Helvetiva Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -.1px;
+  opacity: 1;
+
+  padding: 0.25em 0.5em 0.25em 2.25em;
+  text-align: center;
+  position: relative;
+  display: block;
+  top: 2.5em;
+  color: #FFF;
+}
+
+.ribbon-corner .text {
+  padding: 0.3em 3em;
+}
+
+.right .ribbon-corner {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: -3.75em;
+}
+
+.left .ribbon-corner {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: -2.5em;
+}
+
+.white.ribbon-corner {
+  color: #111;
+}
+
+.white.ribbon-corner .text {
+  border: 1px solid #cecece;
+}
+
+.red.ribbon-corner {
+  background-color: #9a0000;
+}
+
+.red.ribbon-corner .text {
+  border: 1px solid #bf6060;
+}
+
+.green.ribbon-corner {
+  background-color: #006e00;
+}
+
+.green.ribbon-corner .text {
+  border: 1px solid #6bac6b;
+}
+
+.darkblue.ribbon-corner {
+  background-color: #121621;
+  color: #ecedee;
+}
+
+.darkblue.ribbon-corner .text {
+  border: 1px solid #53565e;
+}
+
+.orange.ribbon-corner {
+  background-color: #E57504;
+}
+
+.orange.ribbon-corner .text {
+  border: 1px solid #ebaa65;
+}
+
+.gray.ribbon-corner {
+  background-color: #6d6d6d;
+}
+
+.gray.ribbon-corner .text {
+  border: 1px solid #a4a4a4;
+}

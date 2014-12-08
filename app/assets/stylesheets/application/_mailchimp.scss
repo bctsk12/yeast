@@ -1,0 +1,27 @@
+.mailchimp-form-component {
+
+  .form-group {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .arrow-right-omr{
+    color: $yellow;
+    margin-right: 10px;
+  }
+
+  .omr-signup-tag {
+    margin: 0;
+  }
+
+  .icon-arrow-container{
+    display: inline-block;
+  }
+
+  .form-control {
+    &:focus {
+      border-color: darken($turquoise, 10%);
+    }
+  }
+}

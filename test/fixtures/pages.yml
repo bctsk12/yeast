@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  exception: MyString
+  message_matcher: MyString
+  body: MyText
+
+two:
+  exception: MyString
+  message_matcher: MyString
+  body: MyText

@@ -1,0 +1,7 @@
+// Override maximum container size to make it more reasonable to develop with
+
+.container {
+  @media (min-width: $screen-sm-min) {
+    max-width: 970px;
+  }
+}

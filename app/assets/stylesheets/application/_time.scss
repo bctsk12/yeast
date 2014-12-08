@@ -1,0 +1,20 @@
+.time-section {
+  padding: 30px 0 60px;
+}
+
+.time-alpha {
+  @include make-sm-column(2);
+}
+
+  .time-alpha img {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 37px;
+    left: 38px;
+  }
+
+.time-omega {
+  @include make-sm-column(8);
+}
+

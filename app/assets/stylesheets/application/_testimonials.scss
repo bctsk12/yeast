@@ -1,0 +1,28 @@
+.testimonial-section {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.testimonial-section h3 {
+  margin: 0 auto 40px;
+}
+
+.testimonial-col {
+  @include make-sm-column(4);
+  text-align: center;
+}
+
+  .testimonial-col img {
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    margin-bottom: 40px;
+  }
+
+  .testimonial-col p {
+    text-align: left;
+  }
+
+  .testimonial-col p:last-child {
+    font-size: $font-size-small;
+  }

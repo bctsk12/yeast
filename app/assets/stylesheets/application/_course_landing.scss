@@ -1,0 +1,165 @@
+.courses.show 
+{
+	font-size: 130%; 
+	line-height: 1.52;
+	font-family: "TradeGothic", Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	padding-bottom: 13em;
+	text-align: center;
+
+	.masthead {
+	  background: url("masthead-bg-ios.jpg") no-repeat;
+	  max-width: 100%;
+	  padding: 10% 0 8% 0;
+	  margin-bottom: 0px;
+	  -webkit-background-size: cover; 
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+
+	  /* just in case, to force correct aspect ratio */
+	  height: auto !important;
+	}
+
+	&.header-text {
+		max-width: 43em;
+		margin: auto;
+		padding: 2.5em 1em;
+	}
+
+	h1 {
+		font-family: "MarkWebPro-Black", Arial, Helvetica, sans-serif;
+		font-size: 5em;
+		line-height: 1.1;
+		letter-spacing: -0.03em;
+		color: white;
+		padding-bottom: 0.5em;
+		text-transform: uppercase;
+		letter-spacing: 0.02em;
+		padding-bottom: 0.2em;
+	}
+
+	p.header-intro {
+    font-size: 2em;
+    letter-spacing: -0.02em;
+    color: #fff;
+    line-height: 1.4;
+    text-align: center;
+    padding-bottom: 1.75em;
+    width: 70%;
+    margin: auto;
+	}
+/*----------------------------------------------------------------------------- 
+Instructor Section
+-----------------------------------------------------------------------------*/
+
+.instructor-callout {
+  background: #ececec;
+  min-height: 7.75em;
+  text-align: left;
+}
+
+// .teacher {
+// max-width: 45em;
+// margin: auto;
+// }
+
+.instructor-img {
+width: 15em;
+border-radius: 6em;
+margin-top: -2.5em;
+float: left;
+margin-right: 1.75em;
+min-height: inherit;
+}
+
+.instructor-callout p {
+  padding: 1.4em 0 0.05em;
+  max-width: 90%;
+	font-size: 1.6em;
+}
+
+p.name {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 0.7em 0 1.7em;
+    color: #8B8A8A;
+}
+
+/*----------------------------------------------------------------------------- 
+Logo Bank
+-----------------------------------------------------------------------------*/
+
+.logo-bank {
+  // max-width: 60%;
+  margin: auto;
+  text-align: center;
+  padding-top: 5%;
+  text-transform: capitalize;
+}
+
+
+.divider {
+  height: 0.1em;
+  background-color: #e6e6e6;
+  width: 18%;
+  margin: auto;
+  margin-top: 1.5%;
+  margin-bottom: 2%;
+}
+
+
+.logos {
+  overflow: auto;
+  padding-top: 1.5em;
+}
+
+
+.logo-bank h2 {
+  text-transform: none;
+}
+
+
+ul.inline-list {
+/*  margin: 3.5em 0;*/
+list-style-type: none;
+}
+
+.inline-list li * {
+  /*display: inline-block;*/
+  float: left;
+  margin-right: 2em; 
+}
+
+/*----------------------------------------------------------------------------- 
+About the Course
+-----------------------------------------------------------------------------*/
+
+.about-course {
+  max-width: 75%;
+  margin: auto;
+  padding-top: 5%;
+  text-align: left;
+}
+
+
+.about-course h2 {
+  max-width: 75%;
+  margin: auto;
+  padding-top: 1em;
+}
+
+.about-course p{
+  max-width: 75%;
+  margin: auto;
+  padding-bottom: 4.5em;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 1em;
+
+  /* just in case, to force correct aspect ratio */
+  height: auto !important;
+}
+}

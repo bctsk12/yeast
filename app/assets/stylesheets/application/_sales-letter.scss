@@ -1,0 +1,8 @@
+.sales-letter-section {
+  padding: 60px 0;
+}
+
+.sales-letter-copy {
+  @include make-md-column(8);
+  @include make-md-column-offset(2);
+}

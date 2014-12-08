@@ -1,0 +1,22 @@
+.support-alpha {
+  @include make-sm-column(5);
+}
+
+  .support-alpha > img {
+    margin-top: -4.5em;
+    margin-left: -0.75em;
+  }
+
+.support-omega {
+  @include make-sm-column(7);
+}
+  
+  .support-omega > h3 {
+    margin-top: 40px;
+    margin-bottom:52px;
+  }
+
+  .support-omega > p:last-child {
+    color: $omh-light-green;
+    font-size: $font-size-small;
+  }

@@ -1,0 +1,14 @@
+.style-guide {
+  .style-guide-bar a{
+    height: 40px;
+  }
+
+  .style-guide-bar-container {
+    height: 40px;
+  }
+
+  .style-guide-section-heading {
+    padding-top: 65px;
+    @include gradient-radial($inner-color: $brand-primary, $outer-color: darken($brand-primary, 10%));
+  }
+}

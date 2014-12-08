@@ -1,0 +1,31 @@
+//WORDS AND LINKS
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font-family-sans-serif;
+  font-weight: normal;
+  color: $gray-medium;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 12.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings-font-family;
+}
+
+strong, b {
+  font-weight: bold;
+  line-height: 0; // To fix a slight difference in line height when bolding for some reason?
+}
+

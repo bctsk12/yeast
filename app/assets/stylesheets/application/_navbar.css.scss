@@ -1,0 +1,52 @@
+// !!!
+// Before you make a change here, make sure it's not alrady a SASS variable in _variables.scss
+
+.navbar-default {
+  border-top: 4px solid $parent-dark-blue;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: transparent;
+  @extend .navbar-transparent;
+}
+
+.navbar-transparent {
+  float: left;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: none;
+}
+
+.navbar-nav > li > a {
+  color: $gray;
+}
+
+.navbar-nav > li > a:hover {
+  color: $gray-lighter;
+  background: transparent;
+}
+
+.one-month-rails-2.navbar,
+.one-month-rails.navbar   {border-color: $omr-dark-red;}
+.one-month-html.navbar    {border-color: $omh-dark-green;}
+.growth-hacking.navbar    {border-color: $omgh-dark-blue;}
+.stripe-payments.navbar   {border-color: $omsp-dark-purple;}
+.ios.navbar               {border-color: $omios-dark-orange;}
+.web-security.navbar      {border-color: $om-dark-frenchgray;}
+
+.navbar .navbar-brand-icon {
+  height: 28px;
+}
+
+.navbar-brand {
+  padding: 19.5px 15px;
+}
+
+#nav-back {
+  &:hover {
+    color: $brand-info;
+  }
+}
+
+.dropdown-menu {
+  font-size: 14px;
+}

@@ -1,0 +1,318 @@
+//
+// Variables
+// --------------------------------------------------
+
+// Global values
+// --------------------------------------------------
+
+
+//
+// Brand Colors
+// --------------------------------------------------
+
+$blue-light:            #679aba;
+$blue-dark:             #326d92;
+$yellow:                #f8da4a;
+$gray-light:            #a6a6a6;
+$gray-medium:			#535353;
+$gray-dark:             #4d4d4d;
+
+//
+// Flat UI Colors
+// --------------------------------------------------
+
+$turquoise:             #1abc9c;
+$green-sea:             #16a085;
+
+$emerland:              #2ecc71;
+$nephritis:             #27ae60;
+
+$peter-river:           #3498db;
+$belize-hole:           #2980b9;
+
+$amethyst:              #9b59b6;
+$wisteria:              #8e44ad;
+
+$wet-asphalt:           #34495e;
+$midnight-blue:         #2c3e50;
+
+$sun-flower:            #f1c40f;
+$orange:                #f39c12;
+
+$carrot:                #e67e22;
+$pumpkin:               #d35400;
+
+$alizarin:              #e74c3c;
+$pomegranate:           #c0392b;
+
+$clouds:                #ecf0f1;
+$silver:                #bdc3c7;
+
+$concrete:              #95a5a6;
+$asbestos:              #7f8c8d;
+
+// Grays
+// -------------------------
+$gray-darker:            darken($gray-dark, 13.5%);
+$gray-lighter:           lighten($gray-light, 13.5%);
+
+// Brand colors
+// -------------------------
+
+$brand-primary:         #326d92;
+$brand-success:         #5cb85c;
+$brand-warning:         #f0ad4e;
+$brand-danger:          #d9534f;
+$brand-info:            #5bc0de;
+
+$state-success-text: $brand-success;
+
+//COLORS
+//Ubiquitous Colors
+$charcoal: #4d4d4d;
+$gray: $gray-light;
+$gray-border: #dddddd;
+$hover-button-yellow: #edc60d;
+
+//One Month Parent Brand
+$parent-light-blue: #679aba;
+$parent-dark-blue: #326d92;
+
+//One Month Rails
+$omr-light-red: #f06745;
+$omr-medium-red: #d45737;
+$omr-dark-red: #b84325;
+
+//One Month HTML
+$omh-light-green: #47ada4;
+$omh-medium-green: #129c8e;
+$omh-dark-green: #007d70;
+
+//One Month Growth Hacking
+$omgh-light-blue: #78c8ed;
+$omgh-medium-blue: #4ca9d4;
+$omgh-dark-blue: #378cb3;
+
+//One Month Stipe Payments
+$omsp-light-purple: #7E91C9;
+$omsp-medium-purple: #4E6CA9;
+$omsp-dark-purple: #325297;
+
+//One Month Air Guitar
+$omios-light-orange: #F79B52;
+$omios-medium-orange: #F58831;
+$omios-dark-orange: #EA7024;
+
+//One Month Air Guitar
+$om-light-gold: #f3b55c;
+$om-medium-gold: #dd9637;
+$om-dark-gold: #c67412;
+
+//One Month DNA Sequencing
+$om-light-violet: #b47bb6;
+$om-medium-violet: #a04ca5;
+$om-dark-violet: #892691;
+
+//One Month Web Security
+$om-light-frenchgray: #7c93a1;
+$om-medium-frenchgray: #5b6970;
+$om-dark-frenchgray: #475256;
+
+// Scaffolding
+// -------------------------
+$body-bg:               white;
+$text-color:            $gray-dark;
+$light-gray-bg:			#f4f5f7;
+
+// Links
+// -------------------------
+$link-color:            $parent-light-blue !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+
+// Typography
+// -------------------------
+$font-family-sans-serif:  'TradeGothicLTPro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+$font-family-base:        $font-family-sans-serif;
+
+$font-size-base:          18px;
+$font-size-huge:          ceil($font-size-base * 1.50); // ~27px
+$font-size-large:         ceil($font-size-base * 1.25); // ~22.5px
+$font-size-small:         ceil($font-size-base * 0.85); // ~15px
+
+$line-height-base:        1.52;
+$line-height-computed:    floor($font-size-base * $line-height-base);
+
+$landing-header-font-family: "MarkWebPro-Black", Helvetica, Arial, sans-serif;
+
+$headings-font-family:    "MarkPro-Bold", Helvetica, Arial, sans-serif;
+$headings-font-weight:    400;
+// $headings-line-height:    1.1;
+
+// Iconography
+// -------------------------
+
+$icon-font-path:           "bootstrap/";
+// $icon-font-name:           "glyphicons-halflings-regular";
+
+
+// Components
+// -------------------------
+// Based on 14px font-size and 1.428 line-height (~20px to start)
+
+// $padding-base-vertical:          6px;
+// $padding-base-horizontal:        12px;
+
+// $padding-large-vertical:         10px;
+// $padding-large-horizontal:       16px;
+
+// $padding-small-vertical:         5px;
+// $padding-small-horizontal:       10px;
+
+$line-height-huge:               1.227; // ~27px
+$line-height-large:              1.471; // ~25px
+$line-height-small:              1.385; // ~16px
+
+$border-radius-base:             4px;
+$border-radius-large:            6px;
+$border-radius-small:            2px;
+
+// $component-active-bg:            $brand-primary;
+
+// $caret-width-base:               4px;
+// $caret-width-large:              5px;
+
+// Tables
+// -------------------------
+
+// $table-cell-padding:                 8px !default;
+// $table-condensed-cell-padding:       5px !default;
+
+// $table-bg:                           transparent !default; // overall background-color
+// $table-bg-accent:                    #f9f9f9 !default; // for striping
+// $table-bg-hover:                     #f5f5f5 !default;
+// $table-bg-active:                    $table-bg-hover !default;
+
+// $table-border-color:                 #ddd !default; // table and cell border
+
+// Buttons
+// -------------------------
+
+$btn-font-weight:                normal;
+
+$btn-default-color:              white;
+$btn-default-bg:                 $gray-light;
+$btn-default-border:             darken($btn-default-bg, 5%);
+
+// $btn-primary-color:              #fff !default;
+// $btn-primary-bg:                 $brand-primary !default;
+// $btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+
+// $btn-success-color:              #fff !default;
+// $btn-success-bg:                 $brand-success !default;
+// $btn-success-border:             darken($btn-success-bg, 5%) !default;
+
+// $btn-warning-color:              #fff !default;
+// $btn-warning-bg:                 $brand-warning !default;
+// $btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+
+// $btn-danger-color:               #fff !default;
+// $btn-danger-bg:                  $brand-danger !default;
+// $btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+
+// $btn-info-color:                 #fff !default;
+// $btn-info-bg:                    $brand-info !default;
+// $btn-info-border:                darken($btn-info-bg, 5%);
+
+// $btn-link-disabled-color:        $gray-light;
+
+// Forms
+// -------------------------
+
+// $input-bg:                       #fff;
+// $input-bg-disabled:              $gray-lighter;
+
+// $input-color:                    $gray;
+// $input-border:                   #ccc;
+// $input-border-radius:            $border-radius-base;
+// $input-border-focus:             #66afe9;
+
+// $input-color-placeholder:        $gray-light;
+
+// $input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
+// $input-height-large:             (floor($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
+// $input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
+
+// $legend-color:                   $gray-dark !default;
+// $legend-border-color:            #e5e5e5 !default;
+
+// $input-group-addon-bg:           $gray-lighter !default;
+// $input-group-addon-border-color: $input-border !default;
+
+// Dropdowns
+// -------------------------
+
+// $dropdown-bg:                    #fff !default;
+// $dropdown-border:                rgba(0,0,0,.15) !default;
+// $dropdown-fallback-border:       #ccc !default;
+// $dropdown-divider-bg:            #e5e5e5 !default;
+
+// $dropdown-link-active-color:     #fff !default;
+// $dropdown-link-active-bg:        $component-active-bg !default;
+
+// $dropdown-link-color:            $gray-dark !default;
+// $dropdown-link-hover-color:      #fff !default;
+// $dropdown-link-hover-bg:         $dropdown-link-active-bg !default;
+
+// $dropdown-link-disabled-color:   $gray-light !default;
+
+// $dropdown-header-color:          $gray-light !default;
+
+// $dropdown-caret-color:           #000 !default;
+
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+// Media queries breakpoints
+// --------------------------------------------------
+
+// Extra small screen / phone
+$screen-xs:                  480px !default;
+$screen-phone:               $screen-xs !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+$screen-tablet:              $screen-sm !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-desktop:             $screen-md !default;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-desktop:          $screen-lg !default;
+
+// Navbar
+// -------------------------
+
+// Basics of a navbar
+$navbar-height:                    70px;
+$navbar-margin-bottom:             $line-height-computed;
+$navbar-default-bg:                transparent;
+$navbar-default-border:            $gray-lighter;
+
+// Navbar links
+$navbar-default-link-color:                $gray;
+$navbar-default-link-hover-color:          $gray-light;
+$navbar-default-link-hover-bg:             transparent;
+$navbar-default-link-active-color:         #555 !default;
+$navbar-default-link-active-bg:            transparent;
+$navbar-default-link-disabled-color:       #ccc !default;
+$navbar-default-link-disabled-bg:          transparent !default;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:            white;
+$navbar-default-toggle-icon-bar-bg:         $charcoal;
+$navbar-default-toggle-border-color:        $gray;

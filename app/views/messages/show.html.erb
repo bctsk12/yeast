@@ -1,2 +1,4 @@
-<h1 class="page-header"><%= params[:logged_exception_id] %></h1>
-<p><%= params[:id] %></p>
+<h3><%= @logged_exception.name %></h3>
+<p><%= @logged_exception.message %></p>
+
+<%= simple_format @page.body %>

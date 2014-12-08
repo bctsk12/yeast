@@ -1,0 +1,74 @@
+  .student-hero {
+    height: 803px;
+    margin-bottom:-50px;
+    position: relative;
+    &.rails {
+      border-color: $omr-light-red;
+      background: white;
+      @include breakpoint(desktop){background-image: url('student_pictures/couch-bg.jpg');}
+      @include responsive-image(cover);
+    }
+  }
+
+.student-hero-content > .course-callout {
+  font-size: 32px;
+  @include breakpoint(desktop){
+    font-size: 46px;
+    padding-top: 80px;
+  }
+}
+
+.student-hero-img {
+  width: 488px;
+  position: absolute;
+  top: 16px;
+  @include breakpoint(desktop){
+    width: 588px;
+    padding-top:80px;
+    left: -120px;
+  }
+}
+
+.student-circle-img {
+  width:100%;
+}
+
+.student-hero-letter {
+  background: whitesmoke;
+  line-height:24px;
+  font-size:18px;
+  padding:10px 30px 10px;
+  margin-bottom:0px;
+  margin-left: -15px;
+  position: absolute;
+  top: 36px;
+  width: 90%;
+  @include breakpoint(desktop){
+    top:465px;
+    border-top: 5px solid $omr-light-red;
+  }
+}
+
+.student-hero-content {
+  position: relative;
+  font-size: 24px;
+  color: #2a2a2a;
+}
+
+.student-hero-content-highlight {
+  color: $omh-medium-green;
+}
+
+.student-hero-checklist {
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 32px;
+  margin:24px auto;
+  padding-left: 0px;
+  color: $gray-dark;
+}
+
+  .student-hero-checklist i {
+    color: $omh-medium-green;
+    padding:8px 8px 0px 0px;
+  }

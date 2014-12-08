@@ -1,0 +1,123 @@
+.icon-time{
+  @extend .fa;
+  @extend .fa-clock-o;
+}
+
+.step {
+  overflow: hidden; // To prevent step-number from overflowing when step is short
+}
+
+.step .list-group-item {
+  padding: 0; // Override bootstrap padding
+}
+
+.step-progress-indicator {
+  width: 50px;
+  height: 100%;
+  float: left;
+  position: absolute;
+  background-color: $gray-lighter;
+  border-right: 1px solid $gray-light;
+  // font-family: 'Glyphicons Halflings';
+  &.complete {
+    background-color: rgba(195,255,195,0.27);
+  }
+}
+
+.step-progress-indicator-icon {
+  position: absolute;
+  margin-left:-9px; /* negative half of the width */
+  margin-top:-12.5px; /* negative half of the height */
+  margin-right:auto;
+  top: 50%;
+  left: 50%;
+  font-family: 'Glyphicons Halflings';
+  color: $gray-light;
+  &:before { content: "\e157"; }
+  &.complete {
+    color: $brand-primary;
+    &:before { content: "\e084"; } // ok-sign
+  }
+  &.locked {
+    color: $om-light-frenchgray;
+    &:before { content: "\e033";} // lock-sign
+  }
+}
+
+.step-info.locked {
+  color: $om-light-frenchgray;
+}
+
+.step .step-info {
+  padding: 18px;
+  margin-left: 50px;
+  overflow: hidden;
+  zoom: 1
+}
+
+.step .step-number {
+  color: $gray;
+}
+
+.step-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.step-description {
+  color: $gray-light;
+  font-size: 16px;
+}
+
+.length {
+  margin: 0 5px 0 5px;
+}
+
+.step-action-bar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+}
+
+.step-support-instructions{
+  width: 100%;
+}
+
+.zendesk-support-inline{
+  width: 100%;
+  height: 350px;
+  border: none;
+}
+
+.step-container{
+  margin-bottom: 70px;
+}
+
+
+.checkpoint-content {
+  margin: 15px 0;
+}
+
+.radio-button-label{
+  font-size: 24px;
+  margin-right: 10px;
+
+}
+
+.radio-button{
+  height: 20px;
+  width: 20px;
+}
+
+.skip-link {
+  margin-top: 10px;
+}
+
+#step-notes {
+  a  {
+    i[class^="icon-"] { color: inherit; text-decoration: none; }
+  }
+}

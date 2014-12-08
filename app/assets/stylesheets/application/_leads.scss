@@ -1,0 +1,87 @@
+.form-inline .form-control{
+  &.lead-capture {
+      width: 100%;
+  @include breakpoint(tablet){
+    width: 270px;
+    }
+  }
+}
+
+.lead-button {
+  @extend .email-button;
+  width: 100%;
+  border-radius: 0px;
+  line-height: 0;
+  left: 0;
+  @include breakpoint(tablet){
+    width: auto;
+    left: -5px;
+  }
+}
+
+.lead-share-section {
+  @include make-sm-column(8);
+  @include make-sm-column-offset(2);
+  display:none;
+  margin-top: 1em;
+  padding: 2em 1.5em;
+  background: white;
+  border-radius: 4px;
+}
+
+  .lead-share-section > h5 {
+    margin: auto;
+    line-height: 1.52;
+    max-width: 360px;
+  }
+
+.refer-btn {
+  font-size: 1em;
+  text-align: center;
+  font-family: $headings-font-family;
+  margin: 0.5em auto;
+  padding: 0.5em 2em 0.5em;
+  width: 90%;
+  @extend .btn;
+  @include breakpoint(tablet){
+      margin: 0.5em 0.5em 0;
+      width: auto;
+  }
+  &.email {
+    color: white;
+    background: $gray-dark;
+    padding: .5em 2em .7em;
+  }
+  &.email-send {
+    font-size: .85em;
+    margin: 0;
+    padding: 0.5em 2.66em;
+  }
+}
+
+  .email > a {
+    color: white;
+    padding-left: .5em;
+  }
+
+  .email > a:hover {
+    text-decoration: none;
+  }
+
+.form-group .form-control {
+  &.email-share-box {
+    width: 100%;
+    height: 38px;
+    margin-right: 0.85em;
+    @include breakpoint(tablet) {
+      width: 316px;
+    }
+  }
+}
+
+.link-divider {
+  margin: 20px auto 30px;
+  height:1px;
+  width: 200px;
+  background: #ddd;
+}

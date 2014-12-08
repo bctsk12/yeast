@@ -1,0 +1,54 @@
+.navbar-static-top + .flash-message-container {
+  float: left;
+  width: 100%;
+}
+
+.flash-message-container {
+  text-align: center;
+
+  &.omr{
+    background-color: $omr-medium-red;
+    color: white;
+  }
+  &.omhtml{
+    background-color: $omh-medium-green;
+    color: white
+  }
+  &.ios {
+    background-color: $omios-medium-orange;
+    color: white;
+  }
+}
+
+.ios.shoptalk {
+  .flash-message-container {
+    background-color: $omios-dark-orange;
+    padding: .75em 0;
+    color: white;
+  }
+}
+
+.alert{
+  margin-bottom:0;
+}
+
+.masquerading {
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.cyber-monday-flash {
+  background-color: $omr-dark-red;
+  padding: .75em 0;
+  color: white;
+
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+
+  .pull-right {
+    margin-right: 1.25em;
+  }
+}

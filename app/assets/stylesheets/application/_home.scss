@@ -1,0 +1,65 @@
+.home-masthead {
+  background: url('elevate-your-career.jpg') no-repeat;
+  background-position: center;
+  height: 100vh;
+  min-height: 550px;
+  @include responsive-image(cover);
+  padding: 30px 15px;
+  .home-masthead-content {
+    padding: 15px 0;
+    @include make-row();
+    .featured-video {
+      @include make-sm-column(6);
+      .featured-video-wrapper {
+        @extend .embed-responsive;
+        @extend .embed-responsive-16by9;
+      }
+    }
+    .home-welcome-text {
+      @include make-sm-column(10);
+      @include make-sm-column-offset(1);
+      color: white;
+      text-align: center;
+      h1 {
+        font-family: "MarkWebPro-Black", Arial, Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 30px;
+        line-height: 1.1;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        & span.yellow {
+          color: $yellow;
+        }
+
+        @media (min-width: $screen-tablet) {
+          font-size: 3.6em;
+        }
+
+        @media (min-width: $screen-tablet) {
+          margin-top: 0;
+        }
+      }
+      p {
+        margin: 20px auto 0;
+        max-width: 20em;
+
+        @media (min-width: $screen-phone) {
+          font-size: 24px;
+        }
+
+        em {
+          font-style: normal;
+          color: white;
+        }
+      }
+      .call-to-action {
+        @extend .btn;
+        @extend .btn-hg;
+        @include button-variant($gray-dark, $yellow, darken($yellow, 5%));
+        margin-top: 20px;
+      }
+    }
+  }
+}
+

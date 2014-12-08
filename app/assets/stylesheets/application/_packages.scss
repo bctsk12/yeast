@@ -1,0 +1,152 @@
+$featured-color: #5bbd97;
+
+.masthead {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.signup-heading {
+  font-size: 30px;
+  @include breakpoint(desktop) {
+    font-size: 46px;
+  }
+}
+
+.signup-subheading {
+  font-family: $font-family-sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  color: $gray-light;
+  @include breakpoint(desktop) {
+    font-size: 24px;
+  }
+}
+
+.row-centered {
+  @include breakpoint(desktop) {
+    text-align: center;
+  }
+}
+
+.packages {
+  @include make-row();
+  background-color: #f4f5f7;
+  padding: 50px 25px 25px;
+  @extend .row-centered;
+}
+
+.column-centered {
+  @include breakpoint(desktop) {
+    display: inline-block;
+    float: none !important;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+    vertical-align: text-top;
+  }
+}
+
+.package-container {
+  @include make-sm-column(4);
+  @extend .column-centered;
+}
+
+.package {
+  @extend .panel;
+  @extend .panel-default;
+}
+
+.panel-padding {
+  padding: 15px;
+  @include breakpoint(desktop) {
+    padding: 30px;
+  }
+}
+
+.package-heading {
+  @extend .panel-padding;
+  text-align: center;
+  border-bottom: solid #f4f5f7 2px;
+}
+
+.package-content {
+  @extend .panel-body;
+  @extend .panel-padding;
+  font-size: 14px;
+}
+
+.package-content ul {
+  padding-left: 15px;
+}
+
+.package-title {
+  @extend .panel-title;
+  font-family: "MarkPro-Bold";
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $gray-light;
+  @include breakpoint(desktop) {
+    font-size: 18px;
+  }
+}
+
+.package-price {
+  font-family: $headings-font-family;
+  font-size: 60px;
+  .currency-symbol {
+    font-size: 30px;
+    top: -0.9em;
+  }
+}
+
+.package-price-term {
+  font-size: 18px;
+}
+
+.package-footer {
+  @extend .panel-footer;
+  background-color: transparent;
+  border: none;
+  @extend .panel-padding;
+  text-align: center;
+  margin-top: -25px;
+}
+
+.package-button {
+  @extend .btn;
+  @extend .btn-default;
+  // @include button-variant(white, $omh-medium-green, darken($omh-medium-green, 5%));
+}
+
+.package li {
+  margin-bottom: 1em;
+}
+
+.featured {
+  &.package::before {
+    display: block;
+    content: "MOST POPULAR";
+    text-align: center;
+    background-color: $featured-color;
+    color: white;
+    font-size: 12px;
+    padding: 5px 0;
+    margin-top: -25px;
+  }
+  li {
+    list-style: none;
+  }
+
+  li:before {
+    @include font-awesome(check);
+    color: $featured-color;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-left: -25px;
+  }
+  .package-button {
+    @extend .btn-block;
+    background-color: $featured-color;
+  }
+}

@@ -1,0 +1,39 @@
+.weekly-curriculum {
+	@include make-row();
+	padding: 5% 0 2%;
+}
+
+.week-left {
+	@include make-sm-column(2);
+}
+
+	.week-left img {
+		width: 100%;
+		height: auto;
+	}
+
+	.week-left > p {
+		font-size: 18px;
+		color: $om-light-frenchgray;
+	}
+
+.week {
+	@include make-sm-column(10);
+	@include make-sm-column-offset(1);
+}
+
+.week-right {
+	@include make-sm-column(10);
+	padding-bottom: 20px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #e6e6e6;
+}
+	
+	.week-right > p {
+		font-size: 18px;
+	}
+
+.week-headline {
+	margin-bottom: 50px;
+	padding-left: 15px;
+}

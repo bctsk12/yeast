@@ -1,0 +1,70 @@
+// refer-a-friend page
+
+.signup.referral {
+  .referral-container {
+    @include make-sm-column(8);
+    @include make-sm-column-offset(2);
+    @extend .column-centered;
+  }
+  .referral-panel {
+    @extend .panel; 
+    @extend .panel-default;
+    border-radius: 0px;
+    &.top {
+      margin-bottom:-1px; 
+    }
+  }
+  .referral-body {
+    @extend .panel-body;
+    @extend .panel-padding;
+  }
+  .referral-links {
+    text-align: center;
+    @include make-sm-column(10);
+    @include make-sm-column-offset(1);
+  }
+  .link-divider {
+    margin: 20px auto 40px;
+    height:1px;
+    width: 200px;
+    background: #ddd;
+  }
+  .input-group-btn:first-child .btn {
+    background: $gray-light;
+    color: white;
+  }
+  .copy-link {
+    font-size: .8em;
+    color:$gray-light;
+  }
+  .start-course-btn {
+    background: #5bbd97;
+    margin: 20px auto 10px;
+    font-size: 1em;
+    @extend .btn;
+    @extend .btn-lg;
+  }
+  .social-likes > div {
+    font-size: 1em;
+    @extend .btn;
+    &.email {
+      color: white;
+      background: $gray-dark;
+      margin: 0.5em 0.5em 0;
+      padding: .4em 2em .7em;
+    }
+  }
+  .email > a {
+    color: white;
+    padding-left: .5em;
+  }
+
+  .email > a:hover {
+    text-decoration: none;
+  }
+  .email-input-box {
+    width: 316px;
+height: 38px;
+  }
+
+}

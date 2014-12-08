@@ -1,0 +1,47 @@
+.announcement {
+  clear: both; // Header floats, so we need to clear it
+  margin-bottom: 25px;
+  width: 100%;
+  background-color: $brand-warning;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  a.hide-announcement-link {
+    font-size: 12px;
+    margin-left: 5px;
+    color: white;
+  }
+  p {
+    display: inline;
+  }
+}
+
+.announcement-success {
+  background-color: $brand-success;
+}
+
+.announcement-info {
+  background-color: $brand-info;
+}
+
+.announcement-warning {
+  background-color: $brand-warning;
+}
+
+.announcement-danger {
+  background-color: $brand-danger;
+}
+
+.announcement-home {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background: image-url("xmas-red.png");
+  color: white;
+  a {
+    color: #f5f7ca;
+  }
+}
+  /* uncomment this below if you make .annoucement-home live */
+  // .ribbon-corner-holder {
+  //   top: 2em !important;
+  // }

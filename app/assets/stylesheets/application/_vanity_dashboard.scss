@@ -1,0 +1,19 @@
+// Fixes a few vanity formatting bugs on the dashboard (/vanity)
+
+div.vanity {
+  @extend .container;
+  @media (max-width: $screen-sm-min) {
+    width: auto;
+  }
+  .ab_test table {
+    @extend .table;
+    @extend .table-striped;
+    td {
+      width: auto !important;
+    }
+  }
+
+  #milestones label {
+    @extend .checkbox;
+  }
+}

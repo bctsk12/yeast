@@ -1,0 +1,15 @@
+.development {
+  &.navbar-inverse {
+    font-size: 12px;
+    margin-bottom: 0px;
+    min-height: 10px;
+  }
+
+  .navbar-nav > li > a, .navbar-nav > p.navbar-text {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 27px;
+  }
+}
